@@ -1,7 +1,11 @@
+var date = new Date();
+date.setDate(date.getDate());
+
 $(document).ready(function() {
   $(function() {
     $('.datepicker').datepicker({
-      format: 'yyyy-mm-dd'
+      format: 'dd-mm-yyyy',
+      startDate: date
     });
   });
 });
